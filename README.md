@@ -6,7 +6,7 @@ The repository also includes a student-facing GitHub Pages site in
 [`index.html`](index.html). After GitHub Pages is configured to use
 **GitHub Actions**, `.github/workflows/pages.yml` publishes the site from the
 `main` branch at
-[iditbnaya.github.io/copilot-workshop-for-system-analysts](https://iditbnaya.github.io/copilot-workshop-for-system-analysts/).
+[iditbnaya.github.io/GHCP-Workshop](https://iditbnaya.github.io/GHCP-Workshop/).
 
 ## Learning outcomes
 

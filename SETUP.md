@@ -21,7 +21,7 @@ No terminal, Node.js, npm, or application execution is required.
 2. Open the Command Palette with **Ctrl+Shift+P**.
 3. Select **Git: Clone**.
 4. Enter:
-   `https://github.com/Iditbnaya/copilot-workshop-for-system-analysts.git`
+   `https://github.com/Iditbnaya/GHCP-Workshop.git`
 5. Choose a local folder for the repository.
 6. Select **Open** when cloning finishes.
 7. If Visual Studio Code asks whether you trust the repository, confirm only
