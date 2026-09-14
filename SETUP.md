@@ -1,47 +1,63 @@
 # Setup
 
-## 1. Clone the workshop repository
-
-This is the first workshop activity. Git must already be available on the organization-managed computer; participants do not install it during the session.
-
-1. Open Visual Studio Code.
-2. Open the Command Palette with **Ctrl+Shift+P**.
-3. Select **Git: Clone**.
-4. Paste the workshop repository URL:
-
-   ```text
-   https://github.com/Iditbnaya/copilot-workshop-for-system-analysts.git
-   ```
-
-5. Choose a local folder.
-6. When cloning completes, select **Open**.
-7. If VS Code asks whether you trust the repository, confirm only after verifying that the URL belongs to the workshop organization.
-
 ## Prerequisites
 
 - Visual Studio Code provided by your organization
 - A GitHub account with access to GitHub Copilot
-- GitHub Copilot and GitHub Copilot Chat enabled in VS Code
-- Git already configured by your organization for repository cloning
+- GitHub Copilot Chat enabled in Visual Studio Code
+- Git configured by your organization for repository cloning
+- For Lab 7:
+  - A Figma account
+  - Access to the workshop starter design or Figma design generation
+  - Organizational permission to connect the official remote Figma MCP server
 
-> UI labels can vary slightly by VS Code and GitHub Copilot extension version.
+> UI labels can vary slightly by Visual Studio Code and GitHub Copilot version.
 
-No participant software installation, terminal, Node.js, npm, or application execution is required.
+No terminal, Node.js, npm, or application execution is required.
+
+## 1. Clone the workshop in Visual Studio Code
+
+1. Open Visual Studio Code.
+2. Open the Command Palette with **Ctrl+Shift+P**.
+3. Select **Git: Clone**.
+4. Enter:
+   `https://github.com/Iditbnaya/copilot-workshop-for-system-analysts.git`
+5. Choose a local folder for the repository.
+6. Select **Open** when cloning finishes.
+7. If Visual Studio Code asks whether you trust the repository, confirm only
+   after verifying the repository URL.
+
+Open the complete repository, not only `starter-app`. Copilot needs the labs,
+references, application code, and workshop instructions as context.
 
 ## 2. Verify GitHub Copilot
 
-1. Confirm that the cloned workshop folder is open in VS Code.
+1. Confirm that the cloned workshop folder is open in Visual Studio Code.
 2. Confirm that the Copilot icon is visible.
-3. Open Copilot Chat.
-4. Ask: `What files are in this workspace? Do not change anything.`
+3. Open Copilot Chat in **Ask** mode.
+4. Ask:
+
+   ```text
+   What files are in this workspace? Do not change anything.
+   ```
+
 5. Check that the answer refers to this workshop.
 
-## 3. Workshop safety rule
+## 3. Follow the workshop safety rule
 
-Participants analyze the source but do not edit it. Before using Copilot output in a requirement, specification, or diagram:
+Analyze the application source, but do not edit it. Labs may create analysis
+deliverables under `workshop-output` and reusable Copilot assets in the named
+`.github` customization folders.
 
-1. Identify the source: stakeholder request, documentation, source code, or assumption.
+Before using Copilot output in a requirement, user story, or diagram:
+
+1. Identify the source: stakeholder request, reference, source code, or
+   assumption.
 2. Ask Copilot for file and function evidence.
 3. Separate verified behavior from inferred intent.
 4. Record ambiguities as open questions.
 5. Validate important conclusions with a developer or business owner.
+
+For Lab 7, treat the Figma MCP server as an external trust boundary. Connect
+only the official endpoint `https://mcp.figma.com/mcp` when organizational
+policy permits it, select one workshop frame, and use read tools only.

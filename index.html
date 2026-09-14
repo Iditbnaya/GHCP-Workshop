@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A hands-on GitHub Copilot workshop for digital-insurance system analysts."
+    >
+    <script>
+      (() => {
+        const param = new URLSearchParams(window.location.search).get("scoutTheme");
+        const theme =
+          param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <title>GitHub Copilot for Digital Insurance System Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to workshop content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Workshop home">
+          <span class="brand-mark" aria-hidden="true">DI</span>
+          <span>Copilot Workshop</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#journey">Labs</a>
+          <a href="#resources">Resources</a>
+          <a href="#principles">Principles</a>
+          <a class="nav-cta" href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/SETUP.md">Start setup</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-content">
+          <p class="eyebrow">135-minute hands-on workshop</p>
+          <h1>Analyze a digital insurance product with GitHub Copilot</h1>
+          <p class="hero-copy">
+            Follow one connected system-analysis journey from unfamiliar code
+            to evidence-based user stories, reusable Copilot assets, and a
+            requirements-driven Figma review.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/SETUP.md">Set up the workshop</a>
+            <a class="button secondary" href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/WORKSHOP.md">Open participant guide</a>
+          </div>
+          <ul class="hero-facts" aria-label="Workshop facts">
+            <li><strong>7</strong><span>connected labs</span></li>
+            <li><strong>0</strong><span>runtime setup</span></li>
+            <li><strong>1</strong><span>insurance case study</span></li>
+          </ul>
+        </div>
+        <aside class="hero-panel" aria-label="Workshop workflow">
+          <p class="panel-label">Your analysis path</p>
+          <ol>
+            <li><span>01</span>Understand current behavior</li>
+            <li><span>02</span>Document and verify evidence</li>
+            <li><span>03</span>Package reusable methods</li>
+            <li><span>04</span>Specify a supported outcome</li>
+            <li><span>05</span>Validate and improve a design</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Connected curriculum</p>
+            <h2>Seven labs, one realistic workflow</h2>
+          </div>
+          <p>
+            Complete the labs in order. Each lab produces evidence or reusable
+            material needed by a later activity.
+          </p>
+        </div>
+
+        <div class="progress-panel" aria-live="polite">
+          <div>
+            <strong id="progress-text">0 of 7 labs complete</strong>
+            <span>Your progress is stored only in this browser.</span>
+          </div>
+          <div
+            class="progress-track"
+            role="progressbar"
+            aria-label="Workshop completion"
+            aria-valuemin="0"
+            aria-valuemax="7"
+            aria-valuenow="0"
+          >
+            <span id="progress-bar"></span>
+          </div>
+          <button class="text-button" id="reset-progress" type="button">
+            Reset progress
+          </button>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 1</span><span>20 min</span></div>
+            <h3>Ask Mode &amp; Context Selection</h3>
+            <p>
+              Map the application, explain an insurance calculation for two
+              audiences, and compare model responses.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="1"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/01-ask-mode-code-analysis.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 2</span><span>20 min</span></div>
+            <h3>Plan a Reverse-Engineering Report</h3>
+            <p>
+              Review a bounded analysis plan, then create current-state
+              documentation with evidence-linked diagrams.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="2"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/02-plan-reverse-engineering-report.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 3</span><span>20 min</span></div>
+            <h3>Agent Mode, Tools &amp; MCP</h3>
+            <p>
+              Verify Copilot's analysis, inspect tool calls, and evaluate an
+              MCP provider before allowing access.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="3"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/03-agent-mode-tools-mcp.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 4</span><span>20 min</span></div>
+            <h3>Reusable Prompts, Agents &amp; Skills</h3>
+            <p>
+              Package the verified reverse-engineering method into three
+              reusable GitHub Copilot customizations.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="4"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/04-reusable-prompts-agents-skills.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 5</span><span>15 min</span></div>
+            <h3>User-Story Custom Agent</h3>
+            <p>
+              Create an agent that turns verified sources into one traceable
+              user story without hiding missing decisions.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="5"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/05-user-story-custom-agent.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <div class="lab-meta"><span>Lab 6</span><span>10 min</span></div>
+            <h3>Reusable Analysis Prompt Toolkit</h3>
+            <p>
+              Build portable prompt files for daily analysis work with focused
+              context and predictable outputs.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="6"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/06-reusable-analysis-prompts.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="lab-card featured">
+            <div class="lab-meta"><span>Lab 7</span><span>30 min</span></div>
+            <h3>Figma Requirements Cross-Check</h3>
+            <p>
+              Create a landing page, read one selected frame through the
+              official Figma MCP server, and revise only verified gaps.
+            </p>
+            <div class="lab-footer">
+              <label><input type="checkbox" data-lab="7"> Completed</label>
+              <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/labs/07-figma-requirements-cross-check.md">Open lab <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="principles">
+        <div>
+          <p class="eyebrow">Working agreement</p>
+          <h2>Evidence before confidence</h2>
+          <p>
+            Copilot accelerates the work, but the analyst remains accountable
+            for every rule, diagram element, requirement, and design finding.
+          </p>
+        </div>
+        <div class="principle-list">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Cite the source</h3>
+              <p>Use exact documents, files, functions, calculations, and layers.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Label evidence status</h3>
+              <p>Separate Current, Requested, Assumed, Gap, and Open question.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Keep context focused</h3>
+              <p>Provide only the smallest folder, file, selection, or frame needed.</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Respect tool boundaries</h3>
+              <p>Check the provider, input, output, effect, and permission of every tool.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Workshop library</p>
+            <h2>Student resources</h2>
+          </div>
+          <p>
+            Use these sources throughout the labs. Training assumptions must
+            never be presented as approved organizational policy.
+          </p>
+        </div>
+        <div class="resource-grid">
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/references/stakeholder-request.md">
+            <span class="resource-icon" aria-hidden="true">SR</span>
+            <div><strong>Stakeholder request</strong><span>SR-01 through SR-07</span></div>
+          </a>
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/references/organizational-requirements.md">
+            <span class="resource-icon" aria-hidden="true">OR</span>
+            <div><strong>Organizational requirements</strong><span>25 cross-check IDs</span></div>
+          </a>
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/references/figma-agent-brief.md">
+            <span class="resource-icon" aria-hidden="true">FG</span>
+            <div><strong>Figma agent brief</strong><span>Initial green design prompt</span></div>
+          </a>
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/references/diagram-guide.md">
+            <span class="resource-icon" aria-hidden="true">DG</span>
+            <div><strong>Diagram guide</strong><span>Selection and evidence checks</span></div>
+          </a>
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/references/prompt-library.md">
+            <span class="resource-icon" aria-hidden="true">PL</span>
+            <div><strong>Prompt library</strong><span>Reusable analyst patterns</span></div>
+          </a>
+          <a href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/workshop-output/README.md">
+            <span class="resource-icon" aria-hidden="true">OUT</span>
+            <div><strong>Expected outputs</strong><span>Artifact names and purpose</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div>
+          <p class="eyebrow">Ready to begin?</p>
+          <h2>Start with setup, then follow the labs in order.</h2>
+        </div>
+        <a class="button primary" href="https://github.com/Iditbnaya/copilot-workshop-for-system-analysts/blob/main/SETUP.md">Open setup guide</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>GitHub Copilot for Digital Insurance System Analysis</p>
+      <p>Student workshop · Evidence-based analysis · No application execution required</p>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -9,6 +9,7 @@
 | How do actors and components interact over time? | Sequence diagram |
 | What are the major logical components and dependencies? | Component diagram |
 | What are the important business entities and relationships? | Conceptual data model |
+| Which requirement is represented by which design element? | Requirements coverage map |
 
 ## Evidence labels
 

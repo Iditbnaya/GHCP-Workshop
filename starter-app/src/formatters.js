@@ -1,4 +1,4 @@
-function formatCurrency(amount, currency = "USD", locale = "en-US") {
+function formatCurrency(amount, currency = "ILS", locale = "he-IL") {
   return new Intl.NumberFormat(locale, {
     style: "currency",
     currency
@@ -8,4 +8,3 @@ function formatCurrency(amount, currency = "USD", locale = "en-US") {
 module.exports = {
   formatCurrency
 };
-
