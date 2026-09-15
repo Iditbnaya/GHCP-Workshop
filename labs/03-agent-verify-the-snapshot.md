@@ -23,6 +23,9 @@ No MCP server or external service is required.
 
 1. Open Copilot Chat and select **Agent** mode.
 2. Open **Configure Tools**.
+
+   ![Configure Tools control beside the Copilot Chat mode selector](../assets/configure-tools.png)
+
 3. Keep only the workspace read, search, and edit tools needed for this task.
 4. Do not enable terminal or external-service tools.
 

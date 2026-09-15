@@ -39,6 +39,8 @@ GitHub Pages is deployed from `main` by `.github/workflows/pages.yml`.
 |-- .github/
 |   `-- workflows/
 |       `-- pages.yml
+|-- assets/
+|   `-- configure-tools.png
 |-- labs/
 |   |-- 01-ask-understand-the-quote.md
 |   |-- 02-plan-one-page-product-snapshot.md
