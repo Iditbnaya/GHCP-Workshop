@@ -1,65 +1,78 @@
-# Participant Guide
+# Travel-Insurance Workshop
 
-## First step
+## Start: Set the workshop boundaries (5 min)
 
-Before starting the labs, clone the workshop repository through VS Code by following [SETUP.md](SETUP.md). Do not download individual files or open only the `starter-app` folder; Copilot needs the complete workspace for the exercises.
+Before opening Copilot Chat, create one short repository instruction file. It
+will apply automatically throughout the workshop and prevents repeated safety
+instructions in every prompt.
+
+1. In the VS Code Explorer, open the existing `.github` folder.
+2. Inside it, create `copilot-instructions.md`.
+3. Paste:
+
+```markdown
+# Workshop instructions
+
+- Never modify `starter-app` or `references`, and do not run the application or terminal commands.
+- Write only the exact output named in the current lab.
+- Treat `starter-app` as evidence of current behavior and `references` as requested behavior or design evidence.
+- Label Current, Requested, Assumed, Gap, and Open question information.
+- Cite files and functions for code claims, and document IDs for requested behavior.
+- Use concise business language for system analysts.
+- When evidence is missing or conflicting, record an Open question and do not invent an answer.
+```
+
+4. Save the file.
+5. Do not add travel-insurance rules or task-specific output formats. The file
+   should contain only stable instructions that apply to every lab.
 
 ## Scenario
 
-You are a system analyst joining a team that owns a digital motor-insurance product for private customers in Israel. A small premium-calculation service exists, but the documentation is incomplete and the request for a customer-facing quote-and-buy journey is ambiguous. You will use GitHub Copilot to understand current behavior, identify gaps, draft requirements and user stories, create verified diagrams, build reusable analysis tools, and cross-check a Hebrew RTL landing-page design against organizational requirements.
+You have joined a team creating a simple online travel-insurance quote journey.
+A small calculation already exists, and a product owner has written a short
+request. Your job is to understand what exists, explain it clearly, create one
+user story, and check whether a proposed screen represents the request.
 
-The JavaScript code is a case study. Participants do not change application or
-source documents. Some labs create analysis deliverables under
-`workshop-output` and reusable Copilot assets under approved `.github` folders.
+You are not expected to understand JavaScript. Ask Copilot to translate the
+source into business language and always check the cited evidence.
 
-After cloning, all exercises use files and Copilot Chat. Do not run the
-application, install packages, use a terminal, create commits, or push changes.
+## What makes this path easy to follow
 
-## Working agreement
+- Every lab has one outcome and a visible checkpoint.
+- The main report is limited to one easy-to-scan product snapshot.
+- Diagrams contain no more than six nodes.
+- Tables contain no more than six rows.
+- Prompts state exactly which files to use and which file may be written.
+- MCP and Figma are optional extensions rather than prerequisites.
 
-- Copilot assists; the analyst remains accountable.
-- Treat generated requirements and diagrams as drafts.
-- Give Copilot only the relevant business and technical context.
-- Ask for evidence: documents, file names, functions, calculations, and assumptions.
-- Never present inferred intent as an approved requirement.
-- Never paste secrets, credentials, private customer data, or restricted code into a prompt.
+## Connected journey
 
-## One connected workshop workflow
-
-The labs follow the same change from discovery to design:
-
-| Stage | Real system-analysis task | Workshop output |
-|---|---|---|
-| 1. Understand | Explain unfamiliar current behavior from code | Evidence-based answers in chat |
-| 2. Document | Set stable boundaries and reverse engineer the current system | `.github/copilot-instructions.md` and `workshop-output/reverse-engineering-report.md` |
-| 3. Verify | Review evidence and correct unsupported analysis | Verified reverse-engineering report |
-| 4. Reuse | Package the proven method for future projects | Reusable prompt, agent, and skill |
-| 5. Specify | Turn one supported request into a backlog item | `workshop-output/user-story.md` |
-| 6. Accelerate | Build reusable prompts for daily work | Generic `.prompt.md` toolkit |
-| 7. Validate design | Check and improve a design against product and organizational requirements | Initial/revised coverage reports and a Figma revision prompt |
+| Lab | Analyst task | Output | Time |
+|---|---|---|---:|
+| Start | Set stable workshop boundaries | `.github/copilot-instructions.md` | 5 min |
+| 1 | Understand a quote in Ask mode | Two clear answers in chat | 15 min |
+| 2 | Plan a one-page product snapshot | `workshop-output/product-snapshot.md` | 20 min |
+| 3 | Verify the snapshot in Agent mode | Corrected product snapshot | 15 min |
+| 4 | Turn one request into a user story | `workshop-output/user-story.md` | 15 min |
+| 5 | Save a useful daily prompt | `.github/prompts/explain-current-behavior.prompt.md` | 10 min |
+| 6 | Check a proposed screen | `workshop-output/design-check.md` | 15 min |
+| **Total** |  |  | **95 min** |
 
 ## Labs
 
-| Lab | Topic | Time | Guide |
-|---|---|---:|---|
-| 1 | Ask mode and code analysis | 20 min | [Open lab](labs/01-ask-mode-code-analysis.md) |
-| 2 | Plan and create a reverse-engineering report | 20 min | [Open lab](labs/02-plan-reverse-engineering-report.md) |
-| 3 | Agent mode, tools, and MCP | 20 min | [Open lab](labs/03-agent-mode-tools-mcp.md) |
-| 4 | Create reusable prompts, agents, and skills | 20 min | [Open lab](labs/04-reusable-prompts-agents-skills.md) |
-| 5 | Create a user-story custom agent | 15 min | [Open lab](labs/05-user-story-custom-agent.md) |
-| 6 | Build a reusable analysis prompt toolkit | 10 min | [Open lab](labs/06-reusable-analysis-prompts.md) |
-| 7 | Create, check, and improve a Figma design | 30 min | [Open lab](labs/07-figma-requirements-cross-check.md) |
+1. [Ask mode: understand the quote](labs/01-ask-understand-the-quote.md)
+2. [Plan mode: create a one-page product snapshot](labs/02-plan-one-page-product-snapshot.md)
+3. [Agent mode: verify the snapshot](labs/03-agent-verify-the-snapshot.md)
+4. [Create one user story](labs/04-create-one-user-story.md)
+5. [Save one reusable prompt](labs/05-save-one-reusable-prompt.md)
+6. [Check a simple design](labs/06-check-a-simple-design.md)
 
-## Completion checklist
+## Working agreement
 
-- [ ] I used Copilot Chat with a file, selection, and workspace context.
-- [ ] I compared focused analysis with an agent-assisted workflow.
-- [ ] I created and reviewed a reverse-engineering report with verified diagrams.
-- [ ] I created a reusable prompt, custom agent, and agent skill.
-- [ ] I can explain the difference between models, tools, agents, and MCP.
-- [ ] I distinguished current behavior, requested behavior, assumptions, and gaps.
-- [ ] I drafted requirements and acceptance criteria with traceability.
-- [ ] I created and checked system diagrams.
-- [ ] I created and tested an evidence-based user-story custom agent.
-- [ ] I created reusable prompts for common daily analysis tasks.
-- [ ] I cross-checked a Figma screen against requirement IDs without inferring unsupported coverage.
+- Treat `starter-app` as evidence of current behavior.
+- Treat `references` as requested behavior or design evidence.
+- Never modify `starter-app` or `references`.
+- Do not run the application or use terminal commands.
+- Write only the exact output named in the current lab.
+- If a source does not answer a question, write `Open question`.
+- Prefer a short correct answer over a long speculative answer.

@@ -1,26 +1,25 @@
-const { formatCurrency } = require("./formatters");
-const { calculateQuote } = require("./quoteService");
+const { calculateTravelQuote } = require("./travelQuote");
+
+const sampleTrip = {
+  tripDays: 7,
+  travelerAges: [35, 10],
+  destination: "europe",
+  adventureSports: false,
+};
+
+function formatCurrency(amount) {
+  return new Intl.NumberFormat("he-IL", {
+    style: "currency",
+    currency: "ILS",
+  }).format(amount);
+}
 
 function main() {
-  const quote = calculateQuote({
-    vehicleValue: 120000,
-    coverageType: "comprehensive",
-    driverAge: 22,
-    claimsLast3Years: 1
-  });
+  const quote = calculateTravelQuote(sampleTrip);
 
-  console.log("Motor insurance quote");
-  console.log(`Base premium: ${formatCurrency(quote.basePremium)}`);
-  console.log(`Driver surcharge: ${formatCurrency(quote.driverSurcharge)}`);
-  console.log(`Claims surcharge: ${formatCurrency(quote.claimsSurcharge)}`);
-  console.log(`Annual premium: ${formatCurrency(quote.annualPremium)}`);
-  console.log(`Monthly illustration: ${formatCurrency(quote.monthlyPremium)}`);
+  console.log(`Travelers: ${sampleTrip.travelerAges.length}`);
+  console.log(`Trip: ${sampleTrip.tripDays} days in ${sampleTrip.destination}`);
+  console.log(`Total travel-insurance premium: ${formatCurrency(quote.totalPremium)}`);
 }
 
-if (require.main === module) {
-  main();
-}
-
-module.exports = {
-  main
-};
+main();

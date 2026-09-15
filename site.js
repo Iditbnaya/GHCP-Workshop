@@ -1,4 +1,4 @@
-const storageKey = "digital-insurance-workshop-progress";
+const storageKey = "travel-insurance-workshop-progress";
 const checkboxes = Array.from(document.querySelectorAll("[data-lab]"));
 const progressText = document.querySelector("#progress-text");
 const progressBar = document.querySelector("#progress-bar");
