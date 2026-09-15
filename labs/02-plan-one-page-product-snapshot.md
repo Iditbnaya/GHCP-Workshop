@@ -114,7 +114,7 @@ The snapshot is a conversation aid, not a full specification.
 
 ## GitHub documentation
 
-- [Asking GitHub Copilot questions in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+- [Using Plan mode in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide#plan-mode)
 
 ## Continue
 
