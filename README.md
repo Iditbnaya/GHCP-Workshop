@@ -56,6 +56,8 @@ By the end of the workshop, participants can:
 |   |-- 05-user-story-custom-agent.md
 |   |-- 06-reusable-analysis-prompts.md
 |   `-- 07-figma-requirements-cross-check.md
+|-- assets/
+|   `-- configure-tools.png
 |-- starter-app/
 |   `-- src/
 |-- workshop-output/

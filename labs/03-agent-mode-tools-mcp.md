@@ -45,13 +45,15 @@ provider, input, result, and effect of each call.
 1. Open Copilot Chat and select **Agent** mode.
 2. Select **Configure Tools** near the chat input.
 
+   ![Configure Tools control near the Copilot Chat input](../assets/configure-tools.png)
+
 3. Depending on the VS Code
    version, this may appear as a tools icon or a tool count.
 4. Expand the groups and identify:
     - Built-in workspace tools.
     - Tools contributed by extensions.
     - Tools grouped under any configured MCP server.
-4. For three tools, record:
+5. For three tools, record:
 
 | Tool | Provider | Reads or writes? | Data or system reached |
 | --- | --- | --- | --- |
