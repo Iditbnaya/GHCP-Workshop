@@ -207,6 +207,11 @@ preference with organizational policy.
 | The response is too large | Read one frame and request top-level structure first. |
 | The revised design changes unrelated elements | Restore the duplicate and narrow the prompt to named requirement IDs and layers. |
 
+## GitHub documentation
+
+- [Extending GitHub Copilot Chat with MCP servers](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp)
+- [Asking GitHub Copilot questions in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+
 ## Workshop complete
 
 [Return to the participant guide](../WORKSHOP.md)

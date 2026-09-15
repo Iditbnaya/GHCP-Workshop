@@ -27,7 +27,7 @@ A model produces an answer, but it cannot inspect or change a system by itself.
 A **tool** gives the agent one named capability.
 
 | Type | Example | Provider | Possible effect |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Built-in tool | Search or read workspace files | VS Code or Copilot | Reads local project context |
 | Built-in tool | Edit a file | VS Code or Copilot | Changes the local workspace |
 | MCP tool | Read a work item, query a design, or list a repository issue | A configured MCP server | Sends a request to another local or remote system |
@@ -43,17 +43,19 @@ provider, input, result, and effect of each call.
 ## 2. Inspect the available tools (4 min)
 
 1. Open Copilot Chat and select **Agent** mode.
-2. Select **Configure Tools** near the chat input. Depending on the VS Code
+2. Select **Configure Tools** near the chat input.
+
+3. Depending on the VS Code
    version, this may appear as a tools icon or a tool count.
-3. Expand the groups and identify:
-   - Built-in workspace tools.
-   - Tools contributed by extensions.
-   - Tools grouped under any configured MCP server.
+4. Expand the groups and identify:
+    - Built-in workspace tools.
+    - Tools contributed by extensions.
+    - Tools grouped under any configured MCP server.
 4. For three tools, record:
 
 | Tool | Provider | Reads or writes? | Data or system reached |
-|---|---|---|---|
-| | | | |
+| --- | --- | --- | --- |
+|  |  |  |  |
 
 Do not assume that every enabled tool is needed for the task. Disable a tool if
 its effect or provider is unclear.
@@ -92,12 +94,12 @@ evidence retrieval, not proof that the model interpreted the evidence correctly.
 3. Select one server relevant to system analysis, such as a connector for
    GitHub, Azure DevOps, or Figma.
 4. **Do not install it.** Review the listing and answer:
-   - Who publishes and operates the server?
-   - Does it run locally or connect to a remote service?
-   - What authentication or secrets does it require?
-   - Which tools and read/write actions does it expose?
-   - What project or organizational data could leave VS Code?
-   - Has the organization approved this server and intended use?
+    - Who publishes and operates the server?
+    - Does it run locally or connect to a remote service?
+    - What authentication or secrets does it require?
+    - Which tools and read/write actions does it expose?
+    - What project or organizational data could leave VS Code?
+    - Has the organization approved this server and intended use?
 
 If an organization-approved MCP server is already configured, return to
 **Configure Tools**, locate its tool group, and enable one read-only tool. Run
@@ -107,6 +109,11 @@ Otherwise, stop after evaluating the gallery listing.
 **Checkpoint:** You can explain how Agent mode differs from Ask and Plan modes,
 distinguish built-in and MCP tools, inspect a tool call, and evaluate an MCP
 server before connecting it.
+
+## GitHub documentation
+
+- [Asking GitHub Copilot questions in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+- [Extending GitHub Copilot Chat with MCP servers](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp)
 
 ## Continue
 

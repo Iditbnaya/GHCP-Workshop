@@ -107,6 +107,11 @@ context to a code selection, explain implemented business behavior, request
 explanations for different audiences, and compare models without changing the
 task.
 
+## GitHub documentation
+
+- [Asking GitHub Copilot questions in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+- [Changing the AI model for GitHub Copilot Chat](https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model)
+
 ## Continue
 
 [Continue to Lab 2: Plan and Create a Reverse-Engineering Report](02-plan-reverse-engineering-report.md)

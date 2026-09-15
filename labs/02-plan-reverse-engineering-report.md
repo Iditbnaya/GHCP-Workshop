@@ -31,15 +31,17 @@ In the VS Code Explorer, create `.github/copilot-instructions.md` and add:
 ```markdown
 # Workshop instructions
 
-- Never modify `starter-app` or `references`, and do not run the application or terminal commands.
+- Never modify `starter-app` or `references`, and do not run the application
 - Write only to `workshop-output`, except when a lab names a file under `.github/prompts`, `.github/agents`, or `.github/skills`.
 - Label Current, Requested, Assumed, Gap, and Open question information.
 - Cite files and functions for code claims, and document IDs for requested behavior.
+- Treat `starter-app` as evidence of current behavior and `references` as evidence of requested behavior or guidance.
+- Use concise business language suitable for system analysts who are new to the codebase.
+- Preserve exact business terms, values, conditions, and calculations from the sources.
+- When evidence is missing or conflicting, state `Cannot determine` or record an Open question; never invent rationale or approval.
 ```
 
-Do not add insurance calculations, task-specific output formats, or long role
-descriptions. Those belong in the relevant prompt, not in instructions that
-are sent with every request.
+Save the file.
 
 ## 2. Open Plan mode (1 min)
 
@@ -109,10 +111,10 @@ implementation choices whose wording varies by product version:
 
 | Choice | How Copilot works | Best fit |
 | --- | --- | --- |
-| **Implement interactively** | Copilot follows the plan but pauses at useful checkpoints so you can review results, answer questions, and redirect the work. | New, ambiguous, or high-risk work where the analyst wants close control. |
-| **Implement in autopilot** | Copilot continues through the plan with minimal intervention and stops when it completes the task, reaches a blocker, or needs permission or input. | Well-defined, low-risk work whose scope and validation are already clear. |
+| **Start Implementation** | Copilot follows the plan but pauses at useful checkpoints so you can review results, answer questions, and redirect the work. | New, ambiguous, or high-risk work where the analyst wants close control. |
+| **start with Autopilot** | Copilot continues through the plan with minimal intervention and stops when it completes the task, reaches a blocker, or needs permission or input. | Well-defined, low-risk work whose scope and validation are already clear. |
 
-For this workshop, choose **Implement interactively**. This lets you inspect
+For this workshop, choose **Start Implementation**. This lets you inspect
 Copilot's evidence and correct an unsupported conclusion before it continues.
 
 Before starting, confirm that the implementation instructions still say:
@@ -122,15 +124,14 @@ Before starting, confirm that the implementation instructions still say:
 - Do not run the application.
 - Include the reverse-engineering outputs and Mermaid diagrams in the report.
 
-Allow Copilot to complete the report, then open it in Markdown Preview. Check
-that each diagram renders and that every important element has evidence or an
-explicit `Requested`, `Assumed`, or `Open question` label.
-
-Do not choose autopilot only because it is faster; autonomy does not reduce the
-analyst's responsibility to verify the result.
 
 **Checkpoint:** You can create and review a plan, choose an appropriate
 implementation mode, and verify that execution follows the approved scope.
+
+## GitHub documentation
+
+- [Adding repository custom instructions in your IDE](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions-in-your-ide/add-repository-instructions-in-your-ide)
+- [Asking GitHub Copilot questions in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
 
 ## Continue
 

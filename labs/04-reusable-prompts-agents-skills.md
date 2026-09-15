@@ -79,6 +79,13 @@ listed, reload the VS Code window after the lab; do not install an extension.
 **Checkpoint:** You can explain when to use a prompt, custom agent, or skill and
 inspect each reusable asset for scope, evidence, and safety.
 
+## GitHub documentation
+
+- [Copilot customization cheat sheet](https://docs.github.com/en/copilot/reference/customization-cheat-sheet)
+- [Your first prompt file](https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/your-first-prompt-file)
+- [Your first custom agent](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent)
+- [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+
 ## Continue
 
 [Continue to Lab 5: Create a User-Story Custom Agent](05-user-story-custom-agent.md)

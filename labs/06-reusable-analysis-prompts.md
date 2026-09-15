@@ -152,6 +152,11 @@ Use the **user-story agent** for one focused, traceable story. Use the **PRD
 skill** when a broader product document is genuinely needed and enough
 stakeholder information is available.
 
+## GitHub documentation
+
+- [Your first prompt file](https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/your-first-prompt-file)
+- [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+
 ## Continue
 
 [Continue to Lab 7: Create, Check & Improve a Figma Design](07-figma-requirements-cross-check.md)
