@@ -61,3 +61,7 @@ Before using Copilot output in a requirement, user story, or diagram:
 For Lab 7, treat the Figma MCP server as an external trust boundary. Connect
 only the official endpoint `https://mcp.figma.com/mcp` when organizational
 policy permits it, select one workshop frame, and use read tools only.
+
+## Continue to the workshop
+
+[Start Lab 1: Ask Mode & Context Selection](labs/01-ask-mode-code-analysis.md)
