@@ -1,5 +1,4 @@
-# GitHub Copilot for Digital Insurance System Analysis
-
+# GitHub Copilot System Analysis
 A hands-on, 135-minute beginner workshop for system analysts who use GitHub Copilot to understand a digital motor-insurance product, analyze requirements, create evidence-based user stories, build reusable analysis prompts and agents, create diagrams, and cross-check a Figma design against organizational requirements. It requires no software installation, terminal commands, or code execution during the workshop.
 
 The repository also includes a student-facing GitHub Pages site in
@@ -25,7 +24,7 @@ By the end of the workshop, participants can:
 ## Agenda
 
 | Module | Time |
-|---|---:|
+| --- | ---: |
 | Ask Mode & Code Analysis | 20 min |
 | Plan Mode & Reverse-Engineering Report | 20 min |
 | Agent Mode, Tools & MCP | 20 min |
