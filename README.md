@@ -18,6 +18,7 @@ By the end of the workshop, participants can:
 - Produce traceable requirements and user stories with visible open questions.
 - Generate and validate context, process, and sequence diagrams.
 - Improve unclear requirements using focused, token-efficient prompts.
+- Create concise repository instructions for stable analysis boundaries.
 - Package a successful analysis workflow as a reusable prompt, custom agent, and agent skill.
 - Cross-check a Figma landing page against traceable organizational requirements.
 
@@ -45,9 +46,8 @@ By the end of the workshop, participants can:
 ```text
 .
 |-- .github/
-|   |-- workflows/
-|   |   `-- pages.yml
-|   `-- copilot-instructions.md
+|   `-- workflows/
+|       `-- pages.yml
 |-- labs/
 |   |-- 01-ask-mode-code-analysis.md
 |   |-- 02-plan-reverse-engineering-report.md

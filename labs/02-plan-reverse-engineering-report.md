@@ -16,10 +16,32 @@ that developers, analysts, and product owners can review.
 **Uses:** Lab 1 findings, `starter-app/src`,
 `references/stakeholder-request.md`, and `references/diagram-guide.md`.
 
-**Produces:** `workshop-output/reverse-engineering-report.md` for verification
-in Lab 3.
+**Produces:** `.github/copilot-instructions.md` and
+`workshop-output/reverse-engineering-report.md` for verification in Lab 3.
 
-## 1. Open Plan mode (3 min)
+## 1. Create concise repository instructions (3 min)
+
+Repository instructions are added automatically to Copilot requests in this
+workspace. Keep the file short: include only stable rules that should apply
+across labs. This avoids repeating the same boundaries in every prompt and
+reduces unnecessary context.
+
+In the VS Code Explorer, create `.github/copilot-instructions.md` and add:
+
+```markdown
+# Workshop instructions
+
+- Never modify `starter-app` or `references`, and do not run the application or terminal commands.
+- Write only to `workshop-output`, except when a lab names a file under `.github/prompts`, `.github/agents`, or `.github/skills`.
+- Label Current, Requested, Assumed, Gap, and Open question information.
+- Cite files and functions for code claims, and document IDs for requested behavior.
+```
+
+Do not add insurance calculations, task-specific output formats, or long role
+descriptions. Those belong in the relevant prompt, not in instructions that
+are sent with every request.
+
+## 2. Open Plan mode (1 min)
 
 1. Open Copilot Chat.
 2. Select **Plan** mode.
@@ -28,10 +50,9 @@ in Lab 3.
 Plan mode is useful when the task has multiple analysis steps and you want to
 review the proposed approach before any work begins.
 
-## 2. Request a reverse-engineering plan (5 min)
+## 3. Request a reverse-engineering plan (5 min)
 
-Add `#starter-app`, `references/stakeholder-request.md`, and
-`references/diagram-guide.md` as context, then ask:
+Paste the following text:
 
 ```text
 Create a plan to reverse engineer the code in #starter-app for a system analyst
@@ -47,12 +68,12 @@ The plan must explain how you will:
 - map every report statement and diagram element to evidence.
 
 For every step, name the files or functions to inspect, the evidence to collect,
-and the report section to produce. Do not execute the plan yet. Never modify
-`starter-app` or `references`, and do not run the application. The only
-permitted write is `workshop-output/reverse-engineering-report.md`.
+and the report section to produce. Follow `.github/copilot-instructions.md`.
+Do not execute the plan yet. For this task, the only permitted output is
+`workshop-output/reverse-engineering-report.md`.
 ```
 
-## 3. Review the proposed plan (3 min)
+## 4. Review the proposed plan (3 min)
 
 Check whether the plan:
 
@@ -68,7 +89,7 @@ Check whether the plan:
 
 Do not start implementation until the plan has passed this review.
 
-## 4. Improve the plan (2 min)
+## 5. Improve the plan (2 min)
 
 If evidence, sequencing, or deliverables are unclear, ask:
 
@@ -81,13 +102,13 @@ reviewer will detect unsupported assumptions. Do not execute it yet.
 Compare the first and revised plans. Identify one change that makes the analysis
 safer or easier to verify.
 
-## 5. Start implementation (7 min)
+## 6. Start implementation (6 min)
 
 When the plan is ready, select **Start implementation**. Copilot may present
 implementation choices whose wording varies by product version:
 
 | Choice | How Copilot works | Best fit |
-|---|---|---|
+| --- | --- | --- |
 | **Implement interactively** | Copilot follows the plan but pauses at useful checkpoints so you can review results, answer questions, and redirect the work. | New, ambiguous, or high-risk work where the analyst wants close control. |
 | **Implement in autopilot** | Copilot continues through the plan with minimal intervention and stops when it completes the task, reaches a blocker, or needs permission or input. | Well-defined, low-risk work whose scope and validation are already clear. |
 

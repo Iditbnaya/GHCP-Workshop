@@ -31,7 +31,7 @@ The labs follow the same change from discovery to design:
 | Stage | Real system-analysis task | Workshop output |
 |---|---|---|
 | 1. Understand | Explain unfamiliar current behavior from code | Evidence-based answers in chat |
-| 2. Document | Reverse engineer the current system | `workshop-output/reverse-engineering-report.md` |
+| 2. Document | Set stable boundaries and reverse engineer the current system | `.github/copilot-instructions.md` and `workshop-output/reverse-engineering-report.md` |
 | 3. Verify | Review evidence and correct unsupported analysis | Verified reverse-engineering report |
 | 4. Reuse | Package the proven method for future projects | Reusable prompt, agent, and skill |
 | 5. Specify | Turn one supported request into a backlog item | `workshop-output/user-story.md` |
