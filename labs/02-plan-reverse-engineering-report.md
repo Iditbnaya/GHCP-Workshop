@@ -110,3 +110,7 @@ analyst's responsibility to verify the result.
 
 **Checkpoint:** You can create and review a plan, choose an appropriate
 implementation mode, and verify that execution follows the approved scope.
+
+## Continue
+
+[Continue to Lab 3: Agent Mode, Tools & MCP](03-agent-mode-tools-mcp.md)

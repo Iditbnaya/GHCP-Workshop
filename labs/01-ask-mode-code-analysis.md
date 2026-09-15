@@ -20,7 +20,7 @@ reverse-engineering plan must cover.
 ## 1. Open Ask mode (2 min)
 
 1. Open the workshop root in VS Code.
-2. Locate Explorer, Search, Markdown Preview, and Copilot Chat.
+2. Locate Explorer, Search, and Copilot Chat.
 3. Open Copilot Chat and select **Ask** mode.
 4. Keep Ask mode selected for the entire lab.
 
@@ -106,3 +106,7 @@ policy.
 context to a code selection, explain implemented business behavior, request
 explanations for different audiences, and compare models without changing the
 task.
+
+## Continue
+
+[Continue to Lab 2: Plan and Create a Reverse-Engineering Report](02-plan-reverse-engineering-report.md)

@@ -107,3 +107,7 @@ Otherwise, stop after evaluating the gallery listing.
 **Checkpoint:** You can explain how Agent mode differs from Ask and Plan modes,
 distinguish built-in and MCP tools, inspect a tool call, and evaluate an MCP
 server before connecting it.
+
+## Continue
+
+[Continue to Lab 4: Create Reusable Prompts, Agents & Skills](04-reusable-prompts-agents-skills.md)

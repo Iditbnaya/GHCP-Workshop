@@ -206,3 +206,7 @@ preference with organizational policy.
 | Copilot reads the wrong content | Copy the link to the selected frame, not the file URL. |
 | The response is too large | Read one frame and request top-level structure first. |
 | The revised design changes unrelated elements | Restore the duplicate and narrow the prompt to named requirement IDs and layers. |
+
+## Workshop complete
+
+[Return to the participant guide](../WORKSHOP.md)

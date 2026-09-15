@@ -151,3 +151,7 @@ the answer. Otherwise respond `TBD — decision owner required`.
 Use the **user-story agent** for one focused, traceable story. Use the **PRD
 skill** when a broader product document is genuinely needed and enough
 stakeholder information is available.
+
+## Continue
+
+[Continue to Lab 7: Create, Check & Improve a Figma Design](07-figma-requirements-cross-check.md)

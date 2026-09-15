@@ -78,3 +78,7 @@ listed, reload the VS Code window after the lab; do not install an extension.
 
 **Checkpoint:** You can explain when to use a prompt, custom agent, or skill and
 inspect each reusable asset for scope, evidence, and safety.
+
+## Continue
+
+[Continue to Lab 5: Create a User-Story Custom Agent](05-user-story-custom-agent.md)

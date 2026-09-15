@@ -90,3 +90,7 @@ unresolved payment arrangement into acceptance criteria.
 
 **Checkpoint:** You created a reusable user-story agent and verified that it
 produces traceable stories without hiding missing decisions.
+
+## Continue
+
+[Continue to Lab 6: Build a Reusable Analysis Prompt Toolkit](06-reusable-analysis-prompts.md)
