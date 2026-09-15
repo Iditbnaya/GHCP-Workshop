@@ -14,8 +14,8 @@ lab, strict limits keep the output focused and readable.
 1. Open a new Copilot Chat.
 2. Select **Plan** mode.
 3. Add these three sources:
-   - `starter-app/src`
-   - `references/customer-request.md`
+   - `#src`
+   - `#customer-request.md`
    - Your verified Lab 1 answer
 
 ## Step 2: Request a small plan (5 min)
@@ -77,12 +77,17 @@ Shorten the plan. Keep only the four requested steps and the seven requested
 sections. Remove every technical deliverable.
 ```
 
-## Step 4: Create the snapshot (6 min)
+## Step 4: Create the snapshot (4 min)
 
 Choose **Start Implementation**. Approve only
 `workshop-output/product-snapshot.md`.
 
-When Copilot finishes, open Markdown Preview and look for:
+## Step 5: Review in Markdown Preview (2 min)
+
+1. Open `workshop-output/product-snapshot.md`.
+2. Select **Open Preview** from the editor toolbar, or press
+   **Ctrl+Shift+V**.
+3. Review the rendered document and confirm:
 
 - A clear opening sentence.
 - Small tables that fit on screen.
@@ -90,7 +95,10 @@ When Copilot finishes, open Markdown Preview and look for:
 - Current and Requested labels.
 - No more than three open questions.
 
-## Step 5: Make it easier to read (2 min)
+If a heading, table, or list does not render clearly, correct only the Markdown
+formatting. Do not change verified business content during this visual review.
+
+## Step 6: Make it easier to read (2 min)
 
 If a section feels difficult, ask:
 
